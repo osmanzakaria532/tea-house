@@ -3,18 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tea House</title>
+    <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- daisyUL CDN Link -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
+    <!-- tailwind CDN Link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -23,17 +31,94 @@
             colors: {
               clifford: "#da373d",
             },
-            fontFamily: {
-              Manrope: ["Manrope", "sans-serif"],
-            },
           },
         },
       };
     </script>
+    <!-- stylesheet -->
+    <style>
+      .fontFamily_Manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body class="fontFamily_Manrope">
+    <header class="bg-white">
+      <div class="container mx-auto">
+        <div class="hero min-h-screen">
+          <div
+            class="hero-content flex-col-reverse lg:flex-row lg:justify-between"
+          >
+            <div>
+              <h1
+                class="text-3xl lg:text-7xl text-[#1C1C1C] text-center lg:text-start font-extrabold lg:leading-snug"
+              >
+                It's good <br />
+                tea time at The <br />
+                Tea House
+              </h1>
+              <p
+                class="py-6 text-[#777777] text-base text-justify lg:text-lg leading-7"
+              >
+                Tea and Botanical Solutions Supplier Give Optimum <br />
+                Satisfaction To Your Taste Buds.
+              </p>
+              <button
+                class="btn border-0 bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white"
+              >
+                Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i>
+              </button>
+            </div>
+            <div class="relative">
+              <img src="images/banner.png" class="lg:max-w-2xl -z-50" />
+              <!-- choto divice ai posionta kaj krche na -->
+              <div
+                class="flex items-center gap-3 w-64 bg-white shadow-[0_6px_12px_2px_rgba(0,0,0,0.3)] py-5 px-7 rounded-xl absolute bottom-[5px] right-[305px] z-50"
+              >
+                <i class="fa-solid fa-star"></i>
+                <div class="">
+                  <h6 class="text-[#1C1C1C] text-3xl font-extrabold">5.00</h6>
+                  <p>Trust Pilot Ratings</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="bg-white">
+      <div class="container mx-auto">
+        <section>
+          <h2 class="text-5xl text-center text-black font-extrabold">
+            Our Featured Products
+          </h2>
+          <p class="max-w-4xl mx-auto text-center text-[#777777] mt-5 mb-12">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+          <!-- card div -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <figure>
+                <img
+                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Shoes!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
